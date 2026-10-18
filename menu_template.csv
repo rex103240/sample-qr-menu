@@ -1,0 +1,18 @@
+Category,Name,Description,Price,Type,SpicyLevel,IsAvailable,Badge
+Starters,Paneer Tikka,Cottage cheese marinated in yogurt and spices grilled to perfection,260,Veg,1,TRUE,Bestseller
+Starters,Crispy Corn Pepper Salt,Crispy sweet corn tossed with bell peppers and black pepper,210,Veg,2,TRUE,
+Starters,Chicken Tikka,Succulent boneless chicken chunks marinated in tandoori spices,320,Non-Veg,2,TRUE,Chef's Special
+Starters,Mutton Seekh Kebab,Minced spiced mutton skewers roasted in clay oven,380,Non-Veg,2,TRUE,
+Mains,Paneer Butter Masala,Cottage cheese cubes in a rich tomato and butter gravy,310,Veg,1,TRUE,
+Mains,Dal Makhani,Black lentils slow cooked overnight with butter and cream,280,Veg,0,TRUE,Bestseller
+Mains,Butter Chicken,Classic tandoori chicken cooked in mildly sweet tomato satin gravy,360,Non-Veg,1,TRUE,Must Try
+Mains,Mutton Rogan Josh,Traditional Kashmiri style slow cooked tender mutton curry,420,Non-Veg,3,TRUE,
+Breads,Butter Naan,Leavened tandoor-baked flatbread brushed with butter,60,Veg,0,TRUE,
+Breads,Garlic Naan,Flatbread topped with minced garlic and coriander,75,Veg,0,TRUE,
+Breads,Tandoori Roti,Whole wheat unleavened bread baked in tandoor,35,Veg,0,TRUE,
+Breads,Laccha Paratha,Multi-layered flaky whole wheat bread,55,Veg,0,TRUE,
+Beverages,Fresh Lime Soda,Refreshing lime juice with choice of sweet or salted soda,90,Veg,0,TRUE,
+Beverages,Cold Coffee with Ice Cream,Rich blended espresso topped with vanilla ice cream,150,Veg,0,TRUE,Bestseller
+Beverages,Mango Mint Cooler,Seasonal mango pulp infused with crushed mint and fizz,140,Veg,0,FALSE,Sold Out
+Desserts,Gulab Jamun (2 Pcs),Warm cottage cheese dumplings soaked in saffron sugar syrup,110,Veg,0,TRUE,
+Desserts,Sizzling Brownie with Ice Cream,Warm walnut brownie served on a hot sizzler plate with vanilla ice cream,190,Veg,0,TRUE,Must Try
