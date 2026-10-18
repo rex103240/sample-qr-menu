@@ -232,15 +232,27 @@
       document.getElementById('tableBadge').classList.remove('hidden');
     }
 
-    // Load menu data
+    // Load menu data (supports both instant Google Apps Script JSON and published CSV)
     async function loadMenu() {
       if (GOOGLE_SHEET_CSV_URL && GOOGLE_SHEET_CSV_URL.trim() !== "") {
         try {
           const cacheBusted = GOOGLE_SHEET_CSV_URL + (GOOGLE_SHEET_CSV_URL.includes("?") ? "&" : "?") + `_t=${Date.now()}`;
           const res = await fetch(cacheBusted);
-          const csvText = await res.text();
+          const rawText = await res.text();
           
-          Papa.parse(csvText, {
+          // Check if response is JSON (from Google Apps Script for instant updates)
+          try {
+            const jsonData = JSON.parse(rawText);
+            if (Array.isArray(jsonData)) {
+              allMenuItems = jsonData.filter(r => r.Name && String(r.Name).trim() !== "");
+              renderMenu(allMenuItems);
+              return;
+            }
+          } catch (jsonErr) {
+            // Not JSON, proceed with CSV parsing
+          }
+
+          Papa.parse(rawText, {
             header: true,
             skipEmptyLines: true,
             complete: function(results) {
